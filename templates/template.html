@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Info Dashboard</title>
+    <link rel="stylesheet" href="../static/template.css">
+    
+</head>
+<body>
+    <header>
+        <h1>System Dashboard</h1>
+    </header>
+
+    <main>
+        <!-- Section Système -->
+        <section id="system">
+
+            <h2>System Information</h2>
+
+            <p>Machine Name: {{ machine_name }}</p>
+            <p>Operating System: {{ operating_system }}</p>
+            <p>Uptime: {{ uptime }}</p>
+            <p>Number of Users: {{ user_count }}</p>
+        </section>
+
+        <!-- Section CPU -->
+        <section id="cpu">
+
+            <h2>CPU Information</h2>
+
+            <p>Number of Cores: {{ cpu_cores }}</p>
+            <p>Frequency: {{ cpu_frequency }} MHz</p>
+            <p>Usage: {{ cpu_usage }}</p>
+        </section>
+        <!-- Section Mémoire -->
+        <section id="memory">
+
+            <h2>Memory Information</h2>
+
+            <p>Total RAM {{ total_ram }}</p>
+            <p>Frequency {{ ram_frequency }}</p>
+            <p>% RAM{{ ram_percentage }}</p>
+        </section>
+        <!-- Section Réseaux -->
+        <section id="network">
+
+            <h2>Network Information</h2>
+
+            <p>IP Address : {{ ip_address }}</p> 
+        </section>
+        <!-- Section Processus -->
+        <section id="processus">
+
+            <h2>Processus Information</h2>
+
+
+        </section>
+        <!-- Section Fichier -->
+        <section id="folder">
+
+            <h2>Folder Information</h2>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Dashboard</p>
+    </footer>
+</body>
+</html>

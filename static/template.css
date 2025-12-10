@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    letter-spacing: 1px;
+}
+
+h2{
+    color: rgba(255, 255, 255, 0.987);
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border:2px solid rgb(110, 71, 109);
+    border-radius: 8px;
+
+}
+
+p{
+    font-size: 20px;
+}
+
+header, footer {
+    background-color: #1f1f1f;
+    padding: 40px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 20px;
+}
