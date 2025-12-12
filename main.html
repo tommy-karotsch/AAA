@@ -1,0 +1,113 @@
+
+<html>
+<head>
+    <meta http-equiv="refresh" content="1">
+</head>
+<body>
+    <h1>Hostname: {{NAME}}</h1>
+    <h1>OS: {{OS_NAME}}</h1>
+    <h1>Uptime: {{UPTIME}} sec</h1>
+    <h1>Users: {{USER_COUNT}}</h1>
+    <h1>Cores: {{CORES}}</h1>
+    <h1>Clock Rate:<br>
+        CURRENT: {{CURR_CL}}<br>
+        MIN: {{MIN_CL}}<br>
+        MAX: {{MAX_CL}}
+    </h1>
+    <h1>CPU usage: {{CPU}}%</h1>
+    <h1>RAM:<br>
+        TOTAL: {{TOTAL_RAM}}<br>
+        IN USE: {{IN_USE}}<br>
+        PERCENT: {{PERCENT_RAM}}%
+    </h1>
+    <h1>IP: {{MAIN_IP}}</h1>
+    
+    <h1>TOP 3 CPU:</h1>
+    <table>
+        <tr>
+            <td>PID</td>
+            <td>NAME</td>
+            <td>MEMORY</td>
+            <td>CPU</td>
+        </tr>
+        <tr>
+            <td>{{CPU_PID1}}</td>
+            <td>{{CPU_NAME1}}</td>
+            <td>{{CPU_MEMORY1}}</td>
+            <td>{{CPU_CPU1}}</td>
+        </tr>
+        <tr>
+            <td>{{CPU_PID2}}</td>
+            <td>{{CPU_NAME2}}</td>
+            <td>{{CPU_MEMORY2}}</td>
+            <td>{{CPU_CPU2}}</td>
+        </tr>
+        <tr>
+            <td>{{CPU_PID3}}</td>
+            <td>{{CPU_NAME3}}</td>
+            <td>{{CPU_MEMORY3}}</td>
+            <td>{{CPU_CPU3}}</td>
+        </tr>
+    </table>
+    <h1>TOP 3 RAM:</h1>
+    <table>
+        <tr>
+            <td>PID</td>
+            <td>NAME</td>
+            <td>MEMORY</td>
+            <td>CPU</td>
+        </tr>
+        <tr>
+            <td>{RAM{_PID1}}</td>
+            <td>{{RAM_NAME1}}</td>
+            <td>{{RAM_MEMORY1}}</td>
+            <td>{{RAM_CPU1}}</td>
+        </tr>
+        <tr>
+            <td>{{RAM_PID2}}</td>
+            <td>{{RAM_NAME2}}</td>
+            <td>{{RAM_MEMORY2}}</td>
+            <td>{{RAM_CPU2}}</td>
+        </tr>
+        <tr>
+            <td>{{RAM_PID3}}</td>
+            <td>{{RAM_NAME3}}</td>
+            <td>{{RAM_MEMORY3}}</td>
+            <td>{{RAM_CPU3}}</td>
+        </tr>
+    </table>
+    <h1>TOP 3 OVERALL:</h1>
+    <table>
+        <tr>
+            <td>PID</td>
+            <td>NAME</td>
+            <td>MEMORY</td>
+            <td>CPU</td>
+        </tr>
+        <tr>
+            <td>{{TOP_PID1}}</td>
+            <td>{{TOP_NAME1}}</td>
+            <td>{{TOP_MEMORY1}}</td>
+            <td>{{TOP_CPU1}}</td>
+        </tr>
+        <tr>
+            <td>{{TOP_PID2}}</td>
+            <td>{{TOP_NAME2}}</td>
+            <td>{{TOP_MEMORY2}}</td>
+            <td>{{TOP_CPU2}}</td>
+        </tr>
+        <tr>
+            <td>{{TOP_PID3}}</td>
+            <td>{{TOP_NAME3}}</td>
+            <td>{{TOP_MEMORY3}}</td>
+            <td>{{TOP_CPU3}}</td>
+        </tr>
+    </table>
+    <h1>Directory: {{PATH}}</h1>
+    <h1>Directory size: {{DIRECTORY_SIZE}} B</h1>
+    <h1>Total Files Count: {{TOTAL_FILES_COUNT}}</h1>
+    <h1>Files: {{FILES_NAME}}</h1>
+    <h1>Set Files Count: {{SET_FILES_COUNT}}</h1>
+    <h1>Set Files: {{FILES_WITH_SET_EXT}}</h1>
+</body>
+</html>
