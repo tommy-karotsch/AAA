@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="1">
     <title>System Info Dashboard</title>
     <link rel="stylesheet" href="../static/template.css">
-    
 </head>
 <body>
     <header>
@@ -15,53 +15,140 @@
     <main>
         <!-- Section Système -->
         <section id="system">
-
             <h2>System Information</h2>
-
-            <p>Machine Name: {{ machine_name }}</p>
-            <p>Operating System: {{ operating_system }}</p>
-            <p>Uptime: {{ uptime }}</p>
-            <p>Number of Users: {{ user_count }}</p>
+            <p>Machine Name: {name}</p>
+            <p>Operating System: {os_name}</p>
+            <p>Uptime: {uptime} sec</p>
+            <p>Number of Users: {user_count}</p>
         </section>
 
         <!-- Section CPU -->
         <section id="cpu">
-
             <h2>CPU Information</h2>
-
-            <p>Number of Cores: {{ cpu_cores }}</p>
-            <p>Frequency: {{ cpu_frequency }} MHz</p>
-            <p>Usage: {{ cpu_usage }}</p>
+            <p>Number of Cores: {cpu_cores}</p>
+            <p>Clock Rate:</p>
+            <p>Current: {curr_cl} MHz</p>
+            <p>Min: {min_cl} MHz</p>
+            <p>Max: {max_cl} MHz</p>
+            <p>CPU Usage: {cpu_usage}%</p>
         </section>
+
         <!-- Section Mémoire -->
         <section id="memory">
-
             <h2>Memory Information</h2>
-
-            <p>Total RAM {{ total_ram }}</p>
-            <p>Frequency {{ ram_frequency }}</p>
-            <p>% RAM{{ ram_percentage }}</p>
+            <p>Total RAM: {total_ram}</p>
+            <p>RAM used: {used_ram}</p>
+            <p>% RAM: {percent_ram}%</p>
         </section>
+
         <!-- Section Réseaux -->
         <section id="network">
-
             <h2>Network Information</h2>
-
-            <p>IP Address : {{ ip_address }}</p> 
+            <p>IP Address: {ip_address}</p> 
         </section>
-        <!-- Section Processus -->
-        <section id="processus">
 
-            <h2>Processus Information</h2>
-
-
+        <!-- Section TOP CPU -->
+        <section id="top-cpu">
+            <h2>TOP 3 CPU Processes</h2>
+            <table>
+                <tr>
+                    <td>PID</td>
+                    <td>NAME</td>
+                    <td>MEMORY</td>
+                    <td>CPU</td>
+                </tr>
+                <tr>
+                    <td>{cpu_pid1}</td>
+                    <td>{cpu_name1}</td>
+                    <td>{cpu_memory1}</td>
+                    <td>{cpu_cpu1}</td>
+                </tr>
+                <tr>
+                    <td>{cpu_pid2}</td>
+                    <td>{cpu_name2}</td>
+                    <td>{cpu_memory2}</td>
+                    <td>{cpu_cpu2}</td>
+                </tr>
+                <tr>
+                    <td>{cpu_pid3}</td>
+                    <td>{cpu_name3}</td>
+                    <td>{cpu_memory3}</td>
+                    <td>{cpu_cpu3}</td>
+                </tr>
+            </table>
         </section>
+
+        <!-- Section TOP RAM -->
+        <section id="top-ram">
+            <h2>TOP 3 RAM Processes</h2>
+            <table>
+                <tr>
+                    <td>PID</td>
+                    <td>NAME</td>
+                    <td>MEMORY</td>
+                    <td>CPU</td>
+                </tr>
+                <tr>
+                    <td>{ram_pid1}</td>
+                    <td>{ram_name1}</td>
+                    <td>{ram_memory1}</td>
+                    <td>{ram_cpu1}</td>
+                </tr>
+                <tr>
+                    <td>{ram_pid2}</td>
+                    <td>{ram_name2}</td>
+                    <td>{ram_memory2}</td>
+                    <td>{ram_cpu2}</td>
+                </tr>
+                <tr>
+                    <td>{ram_pid3}</td>
+                    <td>{ram_name3}</td>
+                    <td>{ram_memory3}</td>
+                    <td>{ram_cpu3}</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Section TOP OVERALL -->
+        <section id="top-overall">
+            <h2>TOP 3 Overall Processes</h2>
+            <table>
+                <tr>
+                    <td>PID</td>
+                    <td>NAME</td>
+                    <td>MEMORY</td>
+                    <td>CPU</td>
+                </tr>
+                <tr>
+                    <td>{top_pid1}</td>
+                    <td>{top_name1}</td>
+                    <td>{top_memory1}</td>
+                    <td>{top_cpu1}</td>
+                </tr>
+                <tr>
+                    <td>{top_pid2}</td>
+                    <td>{top_name2}</td>
+                    <td>{top_memory2}</td>
+                    <td>{top_cpu2}</td>
+                </tr>
+                <tr>
+                    <td>{top_pid3}</td>
+                    <td>{top_name3}</td>
+                    <td>{top_memory3}</td>
+                    <td>{top_cpu3}</td>
+                </tr>
+            </table>
+        </section>
+
         <!-- Section Fichier -->
         <section id="folder">
-
             <h2>Folder Information</h2>
-
-
+            <p>Directory: {path}</p>
+            <p>Directory size: {directory_size} B</p>
+            <p>Total Files Count: {total_files_count}</p>
+            <p>Files: {files_name}</p>
+            <p>Set Files Count: {set_files_count}</p>
+            <p>Set Files: {files_with_set_ext}</p>
         </section>
     </main>
 
